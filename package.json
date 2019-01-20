@@ -1,0 +1,14 @@
+{
+  "name": "sass-bootstrap-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "Sass, Bootstrap & Webpack Boilerplate",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "Sass",
+    "Bootstrap",
+    "Webpack"
+  ],
+  "license": "ISC"
+}

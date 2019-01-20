@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/js/index.js',
@@ -27,4 +28,11 @@ module.exports = {
       { test: /\.js$/, exclude: /node_modules/, use: ['babel-loader'] },
     ],
   },
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html',
+      favicon: './public/favicon.ico'
+    }),
+  ],
 };

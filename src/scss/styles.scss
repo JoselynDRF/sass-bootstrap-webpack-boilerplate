@@ -1,5 +1,8 @@
+@import "~bootstrap/scss/bootstrap";
+
 $blue: #00BFFF;
+$grey-light: #fafafa;
 
 body {
-  background-color: $blue;
+  background-color: $grey-light;
 }

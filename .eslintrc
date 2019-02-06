@@ -1,5 +1,8 @@
 {
-  "extends": "airbnb-base",
+  "extends": [
+    "airbnb-base",
+    "plugin:compat/recommended"
+  ],
   "env": {
     "es6": true,
     "browser": true,
@@ -7,5 +10,13 @@
   },
   "parserOptions": {
     "sourceType": "module"
+  },
+  "plugins": ["compat"],
+  "rules": {
+    "compat/compat": "error"
+  },
+  "settings": {
+    "targets": [""],
+    "polyfills": [""]
   }
 }

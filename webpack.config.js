@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const Autoprefixer = require('autoprefixer');
 
 module.exports = {
@@ -55,6 +55,6 @@ module.exports = {
       template: './public/index.html',
       favicon: './public/favicon.ico',
     }),
-    new CleanWebpackPlugin(['build']),
+    new CleanWebpackPlugin(),
   ],
 };
